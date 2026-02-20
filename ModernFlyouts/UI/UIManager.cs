@@ -1,8 +1,8 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.ComponentModel;
 using ModernFlyouts.Controls;
 using ModernFlyouts.Core.UI;
 using ModernFlyouts.Helpers;
-using ModernWpf;
+using iNKORE.UI.WPF.Modern;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -117,6 +117,20 @@ namespace ModernFlyouts.UI
                 if (SetProperty(ref flyoutBackgroundOpacity, value))
                 {
                     OnFlyoutBackgroundOpacityChanged();
+                }
+            }
+        }
+
+        private double immersiveBackgroundOpacity = DefaultValuesStore.ImmersiveBackgroundOpacity;
+
+        public double ImmersiveBackgroundOpacity
+        {
+            get => immersiveBackgroundOpacity;
+            set
+            {
+                if (SetProperty(ref immersiveBackgroundOpacity, value))
+                {
+                    AppDataHelper.ImmersiveBackgroundOpacity = value;
                 }
             }
         }
@@ -410,10 +424,17 @@ namespace ModernFlyouts.UI
             if (!_isThemeUpdated) return;
 
             var themeResource = actualFlyoutTheme == ElementTheme.Light ? lightResources : darkResources;
-            var brush = themeResource["FlyoutBackground"] as Brush;
-            brush = brush.Clone();
-            brush.Opacity = flyoutBackgroundOpacity * 0.01;
-            themeResource["FlyoutBackground"] = brush;
+            var brush = themeResource["FlyoutBackground"] as SolidColorBrush;
+            if (brush == null) return;
+
+            // Compute new alpha from the slider percentage (0-100) applied to
+            // the original high-alpha value (0xF2 = 242 ≈ 95%).
+            byte baseAlpha = 0xF2;
+            byte newAlpha = (byte)(baseAlpha * flyoutBackgroundOpacity * 0.01);
+            var color = brush.Color;
+            var newBrush = new SolidColorBrush(Color.FromArgb(newAlpha, color.R, color.G, color.B));
+            newBrush.Freeze();
+            themeResource["FlyoutBackground"] = newBrush;
         }
 
         private void UpdateTrayIcon()

@@ -1,4 +1,4 @@
-﻿namespace ModernFlyouts
+namespace ModernFlyouts
 {
     public enum FlyoutTriggerType
     {

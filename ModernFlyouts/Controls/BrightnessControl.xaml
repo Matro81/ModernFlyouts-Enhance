@@ -1,12 +1,12 @@
-﻿<UserControl x:Class="ModernFlyouts.Controls.BrightnessControl"
+<UserControl x:Class="ModernFlyouts.Controls.BrightnessControl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:ui="http://schemas.modernwpf.com/2019"
+             xmlns:ui="http://schemas.inkore.net/lib/ui/wpf/modern" xmlns:uiwpf="clr-namespace:iNKORE.UI.WPF.Controls;assembly=iNKORE.UI.WPF"
              xmlns:local="clr-namespace:ModernFlyouts.Controls"
              xmlns:rootui="clr-namespace:ModernFlyouts.UI"
-             xmlns:toolkit="http://schemas.modernwpf.com/toolkit"
+             xmlns:converters="clr-namespace:ModernFlyouts.Converters"
              xmlns:utils="clr-namespace:ModernFlyouts.Utilities"
              xmlns:display="clr-namespace:ModernFlyouts.Core.Display;assembly=ModernFlyouts.Core"
              mc:Ignorable="d" d:DesignWidth="354"
@@ -19,7 +19,7 @@
         <ItemsControl ItemsSource="{Binding BrightnessControllers}">
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <ui:SimpleStackPanel Orientation="Vertical"
+                    <uiwpf:SimpleStackPanel Orientation="Vertical"
                         Spacing="{x:Static rootui:UIManager.DefaultVerticalSpacing}"/>
                 </ItemsPanelTemplate>
             </ItemsControl.ItemsPanel>
@@ -39,7 +39,7 @@
                                     <ui:FontIcon.Glyph>
                                         <Binding Path="Brightness">
                                             <Binding.Converter>
-                                                <toolkit:DoubleToObjectConverter GreaterThan="50"
+                                                <converters:DoubleToObjectConverter GreaterThan="50"
                                                 TrueValue="{x:Static utils:CommonGlyphs.Brightness}"
                                                 FalseValue="{x:Static utils:CommonGlyphs.LowerBrightness}" />
                                             </Binding.Converter>
@@ -70,3 +70,5 @@
     </local:ContentScrollViewer>
 
 </UserControl>
+
+

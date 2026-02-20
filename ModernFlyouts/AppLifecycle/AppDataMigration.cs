@@ -1,4 +1,4 @@
-﻿using ModernFlyouts.Helpers;
+using ModernFlyouts.Helpers;
 using Windows.Storage;
 
 namespace ModernFlyouts.AppLifecycle

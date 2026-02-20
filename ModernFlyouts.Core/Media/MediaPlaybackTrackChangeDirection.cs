@@ -1,4 +1,4 @@
-﻿namespace ModernFlyouts.Core.Media
+namespace ModernFlyouts.Core.Media
 {
     /// <summary>
     /// Specifies the direction in which a media playback's track change.

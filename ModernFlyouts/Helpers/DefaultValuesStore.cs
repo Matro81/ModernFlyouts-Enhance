@@ -1,8 +1,8 @@
-﻿using ModernFlyouts.Controls;
+using ModernFlyouts.Controls;
 using ModernFlyouts.Core.UI;
 using ModernFlyouts.UI;
 using ModernFlyouts.UI.Media;
-using ModernWpf;
+using iNKORE.UI.WPF.Modern;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -77,6 +77,8 @@ namespace ModernFlyouts.Helpers
         public static string RecommendedFlyoutTimeout = FlyoutTimeout.ToString();
 
         public const double FlyoutBackgroundOpacity = 100.0;
+
+        public const double ImmersiveBackgroundOpacity = 50.0;
 
         public const bool TrayIconEnabled = true;
 

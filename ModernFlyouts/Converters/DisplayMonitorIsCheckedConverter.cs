@@ -1,4 +1,4 @@
-﻿using ModernFlyouts.Core.Display;
+using ModernFlyouts.Core.Display;
 using System;
 using System.Globalization;
 using System.Linq;

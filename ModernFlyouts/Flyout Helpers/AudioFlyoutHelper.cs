@@ -1,4 +1,4 @@
-﻿using ModernFlyouts.Controls;
+using ModernFlyouts.Controls;
 using ModernFlyouts.Core.Media.Control;
 using ModernFlyouts.Core.Utilities;
 using ModernFlyouts.Helpers;

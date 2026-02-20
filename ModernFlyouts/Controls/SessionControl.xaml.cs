@@ -1,6 +1,8 @@
-﻿using ModernFlyouts.Core.Media.Control;
-using ModernWpf.Media.Animation;
+using ModernFlyouts.Core.Media.Control;
+using iNKORE.UI.WPF.Modern;
+using iNKORE.UI.WPF.Modern.Media.Animation;
 using System;
+using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -41,6 +43,34 @@ namespace ModernFlyouts.Controls
             AlignThumbnailToRight = FlyoutHandler.Instance.UIManager.AlignGSMTCThumbnailToRight;
             BindingOperations.SetBinding(this, AlignThumbnailToRightProperty,
                 new Binding(nameof(UI.UIManager.AlignGSMTCThumbnailToRight)) { Source = FlyoutHandler.Instance.UIManager });
+
+            // Force dark theme on this control when immersive background is active
+            FlyoutHandler.Instance.UIManager.PropertyChanged += UIManager_PropertyChanged;
+            UpdateImmersiveTheme();
+        }
+
+        private void UIManager_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName == nameof(UI.UIManager.UseGSMTCThumbnailAsBackground) ||
+                e.PropertyName == nameof(UI.UIManager.ActualFlyoutTheme))
+            {
+                Dispatcher.Invoke(UpdateImmersiveTheme);
+            }
+        }
+
+        private void UpdateImmersiveTheme()
+        {
+            var uiManager = FlyoutHandler.Instance.UIManager;
+            if (uiManager.UseGSMTCThumbnailAsBackground)
+            {
+                // Force dark theme for good contrast on blurred album art
+                ThemeManager.SetRequestedTheme(this, ElementTheme.Dark);
+            }
+            else
+            {
+                // Follow the flyout theme
+                ThemeManager.SetRequestedTheme(this, uiManager.ActualFlyoutTheme);
+            }
         }
 
         private void SessionControl_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
@@ -167,14 +197,12 @@ namespace ModernFlyouts.Controls
                 C0.Width = new GridLength(24, GridUnitType.Pixel);
                 C2.Width = new GridLength(0, GridUnitType.Auto);
                 sessionControl.ThumbnailGrid.SetValue(Grid.ColumnProperty, 2);
-                sessionControl.thumbnailBGOpacityBrush.GradientOrigin = sessionControl.thumbnailBGOpacityBrush.Center = new Point(1, 0.5);
             }
             else
             {
                 C0.Width = new GridLength(0, GridUnitType.Auto);
                 C2.Width = new GridLength(24, GridUnitType.Pixel);
                 sessionControl.ThumbnailGrid.SetValue(Grid.ColumnProperty, 0);
-                sessionControl.thumbnailBGOpacityBrush.GradientOrigin = sessionControl.thumbnailBGOpacityBrush.Center = new Point(0, 0.5);
             }
         }
     }

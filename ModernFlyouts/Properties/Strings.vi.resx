@@ -174,7 +174,7 @@
     <value>Dọc</value>
   </data>
   <data name="About.AppDescription" xml:space="preserve">
-    <value>Ứng dụng này được thiết kế để thay thế Fluent Design hiện đại cho các tờ rơi theo chủ đề tàu điện ngầm cũ có trong Windows kể từ Windows 8.</value>
+    <value>Ứng dụng này là sự thay thế Fluent Design hiện đại cho các flyout cũ. Đây là "ModernFlyouts Enhance", một bản fork tiếp tục phát triển sau khi dự án gốc được lưu trữ (archived) vào ngày 15/11/2025. Dự án bổ sung hỗ trợ Fluent Design 2, nền album art sống động và các tinh chỉnh UX cao cấp.</value>
   </data>
   <data name="About.Contributors" xml:space="preserve">
     <value>Người đóng góp</value>
@@ -187,6 +187,12 @@
   </data>
   <data name="About.RateAndReview" xml:space="preserve">
     <value>Xếp hạng và Đánh giá trên Microsoft Store</value>
+  </data>
+  <data name="About.OriginalRepo" xml:space="preserve">
+    <value>Kho lưu trữ gốc (ShankarBUS)</value>
+  </data>
+  <data name="About.OriginalRepo_ThankYou" xml:space="preserve">
+    <value>Chân thành cảm ơn @ShankarBUS và cộng đồng gốc. Dự án gốc đã được lưu trữ vào ngày 15/11/2025, nhưng nền tảng của nó vẫn tiếp tục phát triển tại đây.</value>
   </data>
   <data name="About.Version" xml:space="preserve">
     <value>Phiên bản: </value>

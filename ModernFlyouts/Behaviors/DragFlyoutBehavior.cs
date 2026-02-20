@@ -1,4 +1,4 @@
-﻿using Microsoft.Xaml.Behaviors;
+using Microsoft.Xaml.Behaviors;
 using ModernFlyouts.Core.UI;
 using System.Windows;
 

@@ -1,4 +1,4 @@
-﻿/*
+/*
  *  IconExtractor/IconUtil for .NET
  *  Copyright (C) 2014 Tsuda Kageyu. All rights reserved.
  *

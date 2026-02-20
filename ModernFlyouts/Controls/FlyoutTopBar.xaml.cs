@@ -1,4 +1,4 @@
-﻿using ModernFlyouts.Helpers;
+using ModernFlyouts.Helpers;
 using ModernFlyouts.UI;
 using ModernFlyouts.Utilities;
 using System;

@@ -1,4 +1,4 @@
-﻿#if Screenshots
+#if Screenshots
 
 using System;
 using System.IO;

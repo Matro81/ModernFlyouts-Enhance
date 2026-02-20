@@ -1,4 +1,4 @@
-﻿namespace ModernFlyouts.Utilities
+namespace ModernFlyouts.Utilities
 {
     public static class CommonGlyphs
     {

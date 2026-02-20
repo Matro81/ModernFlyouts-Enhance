@@ -1,4 +1,4 @@
-﻿using ModernFlyouts.Controls;
+using ModernFlyouts.Controls;
 using ModernFlyouts.Helpers;
 
 namespace ModernFlyouts

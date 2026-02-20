@@ -1,4 +1,4 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.ComponentModel;
 using ModernFlyouts.AppLifecycle;
 using ModernFlyouts.Core.Display;
 using ModernFlyouts.Core.Interop;
@@ -10,7 +10,7 @@ using ModernFlyouts.UI;
 using ModernFlyouts.UI.Media;
 using ModernFlyouts.Views;
 using ModernFlyouts.Workarounds;
-using ModernWpf;
+using iNKORE.UI.WPF.Modern;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;

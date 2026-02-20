@@ -1,4 +1,4 @@
-﻿namespace ModernFlyouts.Core.Media
+namespace ModernFlyouts.Core.Media
 {
     /// <summary>
     /// Defines values for the types of media playback.

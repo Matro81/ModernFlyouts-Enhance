@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Pipes;
@@ -120,7 +120,7 @@ namespace ModernFlyouts.AppLifecycle
         #endregion
 
         /// <summary>
-        /// 😠 You did your best application. Now, <strong>prepare to die!</strong> <i>*pew*</i> <i>*pew*</i> <i>*pew*</i>.
+        /// ?? You did your best application. Now, <strong>prepare to die!</strong> <i>*pew*</i> <i>*pew*</i> <i>*pew*</i>.
         /// </summary>
         /// <remarks>
         /// There was an issue where the <see cref="mutex"/> still being held by this instance which prevented the app from restarting after an update.

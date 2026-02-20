@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
 using System.Windows;
@@ -306,7 +306,7 @@ namespace ModernFlyouts.Core.Interop
             WNDCLASSEX wind_class = new()
             {
                 cbSize = Marshal.SizeOf(typeof(WNDCLASSEX)),
-                hbrBackground = (IntPtr)1 + 1,
+                hbrBackground = IntPtr.Zero,
                 cbClsExtra = 0,
                 cbWndExtra = 0,
                 hInstance = Marshal.GetHINSTANCE(typeof(BandWindow).Module),

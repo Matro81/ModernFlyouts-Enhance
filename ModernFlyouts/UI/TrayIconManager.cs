@@ -1,8 +1,8 @@
-﻿using Hardcodet.Wpf.TaskbarNotification;
+using Hardcodet.Wpf.TaskbarNotification;
 using ModernFlyouts.Helpers;
 using ModernFlyouts.Utilities;
-using ModernWpf;
-using ModernWpf.Controls;
+using iNKORE.UI.WPF.Modern;
+using iNKORE.UI.WPF.Modern.Controls;
 using System;
 using System.Windows;
 using System.Windows.Controls;

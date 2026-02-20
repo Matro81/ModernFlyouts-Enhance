@@ -1,4 +1,4 @@
-﻿using ModernFlyouts.Core.Threading;
+using ModernFlyouts.Core.Threading;
 using ModernFlyouts.Core.Utilities;
 using NPSMLib;
 using System;

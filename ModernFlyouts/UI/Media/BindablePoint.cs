@@ -1,4 +1,4 @@
-﻿using ModernWpf;
+using iNKORE.UI.WPF.Modern;
 using System;
 using System.Windows;
 
@@ -55,7 +55,7 @@ namespace ModernFlyouts.UI.Media
 
         #endregion
 
-        public event TypedEventHandler<BindablePoint, EventArgs> ValueChanged;
+        public event EventHandler ValueChanged;
 
         public BindablePoint(double x, double y)
         {

@@ -1,4 +1,4 @@
-﻿using ModernFlyouts.Core.Utilities;
+using ModernFlyouts.Core.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;

@@ -1,4 +1,4 @@
-﻿using CommunityToolkit.Mvvm.Input;
+using CommunityToolkit.Mvvm.Input;
 using ModernFlyouts.Core.UI;
 using ModernFlyouts.Helpers;
 using System.Threading.Tasks;

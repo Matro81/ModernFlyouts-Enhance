@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AppInstaller
 	Uri="https://raw.githubusercontent.com/ModernFlyouts-Community/ModernFlyouts/main/ModernFlyouts.Package/Package.appinstaller"
-	Version="0.9.3.0"
+	Version="1.0.0.0"
 	xmlns="http://schemas.microsoft.com/appx/appinstaller/2018">
 
 	<MainBundle
-		Name="ModernFlyouts"
+		Name="ModernFlyouts Enhance"
 		Publisher="CN=E3B4A0F6-E459-414C-8DFB-ABEAB07C9242"
-		Version="0.9.3.0"
-		Uri="https://github.com/ModernFlyouts-Community/ModernFlyouts/releases/download/0.9.3/32669SamG.ModernFlyouts_0.9.3.0_neutral___pcy8vm99wrpcg.Msixbundle" />
+		Version="1.0.0.0"
+		Uri="https://github.com/ModernFlyouts-Community/ModernFlyouts/releases/download/v1.0.0/32669SamG.ModernFlyouts_1.0.0.0_neutral___pcy8vm99wrpcg.Msixbundle" />
 				
 
 	<UpdateSettings>

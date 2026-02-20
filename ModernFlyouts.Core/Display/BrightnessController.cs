@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Management;
 using CommunityToolkit.Mvvm.ComponentModel;
 using ModernFlyouts.Core.Interop;

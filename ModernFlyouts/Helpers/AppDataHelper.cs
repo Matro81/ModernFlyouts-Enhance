@@ -1,8 +1,8 @@
-﻿using ModernFlyouts.Controls;
+using ModernFlyouts.Controls;
 using ModernFlyouts.Core.UI;
 using ModernFlyouts.UI;
 using ModernFlyouts.UI.Media;
-using ModernWpf;
+using iNKORE.UI.WPF.Modern;
 using System;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
@@ -274,6 +274,12 @@ namespace ModernFlyouts.Helpers
         public static double FlyoutBackgroundOpacity
         {
             get => GetValue(DefaultValuesStore.FlyoutBackgroundOpacity);
+            set => SetValue(value);
+        }
+
+        public static double ImmersiveBackgroundOpacity
+        {
+            get => GetValue(DefaultValuesStore.ImmersiveBackgroundOpacity);
             set => SetValue(value);
         }
 

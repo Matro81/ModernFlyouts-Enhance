@@ -1,4 +1,4 @@
-﻿using ModernFlyouts.Helpers;
+using ModernFlyouts.Helpers;
 using System;
 using System.Globalization;
 using System.Windows.Data;

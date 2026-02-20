@@ -1,4 +1,4 @@
-﻿using ModernFlyouts.Core.Media;
+using ModernFlyouts.Core.Media;
 using ModernFlyouts.Properties;
 using ModernFlyouts.Utilities;
 using System;
@@ -193,6 +193,29 @@ namespace ModernFlyouts.Converters
             }
 
             return string.Empty;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    internal class ScaleDoubleConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            if (value is double d)
+            {
+                double factor = 1.0;
+                if (parameter != null && double.TryParse(parameter.ToString(), out double result))
+                {
+                    factor = result;
+                }
+                return d * factor;
+            }
+
+            return 0.0;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

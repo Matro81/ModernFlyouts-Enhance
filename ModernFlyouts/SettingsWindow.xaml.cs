@@ -1,7 +1,7 @@
-﻿using ModernFlyouts.Helpers;
+using ModernFlyouts.Helpers;
 using ModernFlyouts.Navigation;
-using ModernWpf.Controls;
-using ModernWpf.Media.Animation;
+using iNKORE.UI.WPF.Modern.Controls;
+using iNKORE.UI.WPF.Modern.Media.Animation;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

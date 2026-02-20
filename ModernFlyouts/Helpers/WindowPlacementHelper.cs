@@ -1,4 +1,4 @@
-﻿using ModernFlyouts.Core.Interop;
+using ModernFlyouts.Core.Interop;
 using System;
 using System.IO;
 using System.Runtime.InteropServices;

@@ -1,4 +1,9 @@
-﻿using ModernFlyouts.Core.Interop;
+using iNKORE.UI.WPF.Modern;
+using iNKORE.UI.WPF.Modern.Common;
+using iNKORE.UI.WPF.Modern.Controls;
+using iNKORE.UI.WPF.Modern.Helpers;
+using iNKORE.UI.WPF.Modern.Helpers.Styles;
+using ModernFlyouts.Core.Interop;
 using System;
 using System.Windows;
 
@@ -9,6 +14,21 @@ namespace ModernFlyouts.Core.UI
         static FlyoutWindow()
         {
             ContentProperty.OverrideMetadata(typeof(BandWindow), new FrameworkPropertyMetadata(OnContentPropertyChanged));
+        }
+
+        protected override void OnSourceCreated()
+        {
+            base.OnSourceCreated();
+        }
+
+        public double AcrylicOpacity { get; set; } = 1.0;
+        public bool IsAcrylicDarkTheme { get; set; } = true;
+
+        public void ApplyAcrylicBlur()
+        {
+            // Disabled: SetWindowCompositionAttribute (WCA_ACCENT_POLICY) is incompatible 
+            // with WS_EX_NOREDIRECTIONBITMAP layered windows which ModernFlyouts use. 
+            // Fallback implemented using WPF BlurEffect in FlyoutView.xaml.
         }
 
         public FlyoutWindow()

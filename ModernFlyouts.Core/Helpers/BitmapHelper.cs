@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using System.Windows.Media.Imaging;
 
 namespace ModernFlyouts.Core.Helpers

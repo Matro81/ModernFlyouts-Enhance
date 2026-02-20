@@ -1,4 +1,4 @@
-﻿using CommunityToolkit.Mvvm.Input;
+using CommunityToolkit.Mvvm.Input;
 using ModernFlyouts.Core.Display;
 using System.Windows;
 using System.Windows.Controls;

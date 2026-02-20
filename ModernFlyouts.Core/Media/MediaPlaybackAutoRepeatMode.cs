@@ -1,4 +1,4 @@
-﻿namespace ModernFlyouts.Core.Media
+namespace ModernFlyouts.Core.Media
 {
     /// <summary>
     /// Specifies the auto repeat mode for media playback.

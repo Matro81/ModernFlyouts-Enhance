@@ -118,18 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ApplicationDescription" xml:space="preserve">
-    <value>ModernFlyouts is an open source, modern, and Fluent Design-based replacement for the old Metro-themed flyouts present in Windows 10.</value>
+    <value>ModernFlyouts Enhance is an open source, modern, and Fluent Design-based replacement for the old Metro-themed flyouts.</value>
   </data>
   <data name="ApplicationDisplayName" xml:space="preserve">
-    <value>ModernFlyouts (Preview)</value>
+    <value>ModernFlyouts Enhance</value>
   </data>
   <data name="PackageDisplayName" xml:space="preserve">
-    <value>ModernFlyouts (Preview)</value>
+    <value>ModernFlyouts Enhance</value>
   </data>
   <data name="PublisherDisplayName" xml:space="preserve">
     <value>Sam G</value>
   </data>
   <data name="TileShortName" xml:space="preserve">
-    <value>ModernFlyouts</value>
+    <value>MF Enhance</value>
   </data>
 </root>

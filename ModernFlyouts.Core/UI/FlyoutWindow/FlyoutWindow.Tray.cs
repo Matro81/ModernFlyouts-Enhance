@@ -1,4 +1,4 @@
-﻿using ModernFlyouts.Core.Interop;
+using ModernFlyouts.Core.Interop;
 
 namespace ModernFlyouts.Core.UI
 {

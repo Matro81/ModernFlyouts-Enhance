@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -16,7 +16,7 @@ namespace ModernFlyouts.Helpers
 
         private static readonly Dictionary<Enum, string> EnumRedirectionMap = new()
         {
-            { ModernWpf.ElementTheme.Default, "Settings.SystemDefault" }
+            { iNKORE.UI.WPF.Modern.ElementTheme.Default, "Settings.SystemDefault" }
         };
 
         #region Properties

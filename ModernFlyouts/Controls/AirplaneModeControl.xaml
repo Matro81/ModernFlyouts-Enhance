@@ -1,13 +1,14 @@
-﻿<UserControl x:Class="ModernFlyouts.Controls.AirplaneModeControl"
+<UserControl x:Class="ModernFlyouts.Controls.AirplaneModeControl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:ui="http://schemas.modernwpf.com/2019"
+             xmlns:ui="http://schemas.inkore.net/lib/ui/wpf/modern"
              xmlns:root="clr-namespace:ModernFlyouts"
              xmlns:utils="clr-namespace:ModernFlyouts.Utilities"
              xmlns:resx="clr-namespace:ModernFlyouts.Properties"
              xmlns:toolkit="http://schemas.modernwpf.com/toolkit"
+             xmlns:converters="clr-namespace:ModernFlyouts.Converters"
              mc:Ignorable="d"
              Height="64" d:DesignWidth="354" DataContext="{x:Static root:FlyoutHandler.Instance}">
 
@@ -17,7 +18,7 @@
             <ui:FontIcon.Glyph>
                 <Binding>
                     <Binding.Converter>
-                        <toolkit:BoolToObjectConverter
+                        <converters:BoolToObjectConverter
                                        TrueValue="{x:Static utils:CommonGlyphs.Airplane}"
                                        FalseValue="{x:Static utils:CommonGlyphs.SignalBars}" />
                     </Binding.Converter>
@@ -31,7 +32,7 @@
             <TextBlock.Text>
                 <Binding>
                     <Binding.Converter>
-                        <toolkit:BoolToObjectConverter
+                        <converters:BoolToObjectConverter
                                        TrueValue="{x:Static resx:Strings.AirplaneModeOn}"
                                        FalseValue="{x:Static resx:Strings.AirplaneModeOff}" />
                     </Binding.Converter>

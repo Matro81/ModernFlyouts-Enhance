@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.InteropServices;
 using System.Windows.Input;
 using static ModernFlyouts.Core.Interop.NativeMethods;

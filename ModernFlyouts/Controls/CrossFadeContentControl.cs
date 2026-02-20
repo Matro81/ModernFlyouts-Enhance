@@ -1,4 +1,4 @@
-﻿// Source code taken from https://github.com/Kinnara/ModernWpf/blob/master/samples/SamplesCommon/CrossFadeContentControl.cs,
+// Source code taken from https://github.com/Kinnara/ModernWpf/blob/master/samples/SamplesCommon/CrossFadeContentControl.cs,
 // MIT License
 
 // Copyright (c) 2019 Yimeng Wu

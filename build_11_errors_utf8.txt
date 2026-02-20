@@ -1,0 +1,9 @@
+﻿F:\Google Antigravity\ModernFlyouts\ModernFlyouts.Package\ModernFlyouts.Package.wapproj(35,3): error MSB4019: The imported project "C:\Program Files\dotnet\sdk\8.0.417\Microsoft\DesktopBridge\Microsoft.DesktopBridge.props" was not found. Confirm that the expression in the Import declaration "C:\Program Files\dotnet\sdk\8.0.417\\Microsoft\DesktopBridge\\Microsoft.DesktopBridge.props" is correct, and that the file exists on disk.
+F:\Google Antigravity\ModernFlyouts\ModernFlyoutsBridge\ModernFlyoutsBridge.vcxproj(36,3): error MSB4019: The imported project "F:\Microsoft.Cpp.Default.props" was not found. Confirm that the expression in the Import declaration "\Microsoft.Cpp.Default.props" is correct, and that the file exists on disk.
+F:\Google Antigravity\ModernFlyouts\ModernFlyouts\Navigation\LayoutPage.xaml(48,33): error MC3072: The property 'HorizontalSpacing' does not exist in XML namespace 'http://schemas.microsoft.com/winfx/2006/xaml/presentation'. Line 48 Position 33. [F:\Google Antigravity\ModernFlyouts\ModernFlyouts\ModernFlyouts.csproj]
+
+Build FAILED.
+    3 Warning(s)
+    3 Error(s)
+
+Time Elapsed 00:00:01.00

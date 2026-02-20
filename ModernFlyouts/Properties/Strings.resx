@@ -121,7 +121,7 @@
     <value>About</value>
   </data>
   <data name="About.AppDescription" xml:space="preserve">
-    <value>This app is designed to be a modern Fluent Design replacement for the old metro themed flyouts present in Windows since Windows 8.</value>
+    <value>This app is designed to be a modern Fluent Design replacement for the old metro themed flyouts. This is "ModernFlyouts Enhance", a modernized fork continuing development after the original project was archived by the owner on November 15, 2025. It adds Fluent Design 2 support, immersive backgrounds, and premium UX refinements.</value>
   </data>
   <data name="About.Contributors" xml:space="preserve">
     <value>Contributors</value>
@@ -140,6 +140,12 @@
   </data>
   <data name="About.RateAndReview" xml:space="preserve">
     <value>Rate and Review on Microsoft Store</value>
+  </data>
+  <data name="About.OriginalRepo" xml:space="preserve">
+    <value>Original repository (ShankarBUS)</value>
+  </data>
+  <data name="About.OriginalRepo_ThankYou" xml:space="preserve">
+    <value>A sincere thank you to @ShankarBUS and the original community. The original project was archived on Nov 15, 2025, but its foundation lives on here.</value>
   </data>
   <data name="About.Version" xml:space="preserve">
     <value>Version : </value>

@@ -1,4 +1,4 @@
-﻿using ModernFlyouts.AppLifecycle;
+using ModernFlyouts.AppLifecycle;
 using ModernFlyouts.Core.Interop;
 using ModernFlyouts.Helpers;
 using System;
@@ -9,8 +9,8 @@ namespace ModernFlyouts
 {
     public class Program
     {
-        public const string AppName = "ModernFlyouts";
-        public const string AppHostName = "ModernFlyouts";
+        public const string AppName = "ModernFlyouts Enhance";
+        public const string AppHostName = "ModernFlyouts Enhance";
 
         [STAThread]
         private static void Main(string[] args)

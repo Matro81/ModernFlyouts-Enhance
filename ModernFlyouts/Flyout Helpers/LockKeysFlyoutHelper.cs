@@ -1,4 +1,4 @@
-﻿using ModernFlyouts.Controls;
+using ModernFlyouts.Controls;
 using ModernFlyouts.Helpers;
 using ModernFlyouts.Utilities;
 using System.Windows.Input;

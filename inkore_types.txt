@@ -1,0 +1,13 @@
+M:iNKORE.UI.WPF.Modern.Helpers.Styles.BackdropHelper.IsSupported(iNKORE.UI.WPF.Modern.Helpers.Styles.BackdropType)
+M:iNKORE.UI.WPF.Modern.Helpers.Styles.BackdropHelper.Apply(System.Windows.Window,iNKORE.UI.WPF.Modern.Helpers.Styles.BackdropType,System.Boolean)
+M:iNKORE.UI.WPF.Modern.Helpers.Styles.BackdropHelper.Apply(System.IntPtr,iNKORE.UI.WPF.Modern.Helpers.Styles.BackdropType,System.Boolean,System.Nullable{System.Windows.Media.Color})
+M:iNKORE.UI.WPF.Modern.Helpers.Styles.BackdropHelper.Remove(System.Windows.Window)
+M:iNKORE.UI.WPF.Modern.Helpers.Styles.BackdropHelper.Remove(System.IntPtr)
+M:iNKORE.UI.WPF.Modern.Helpers.Styles.BackdropHelper.ApplyDarkMode(System.Windows.Window)
+M:iNKORE.UI.WPF.Modern.Helpers.Styles.BackdropHelper.ApplyDarkMode(System.IntPtr)
+M:iNKORE.UI.WPF.Modern.Helpers.Styles.BackdropHelper.RemoveDarkMode(System.Windows.Window)
+M:iNKORE.UI.WPF.Modern.Helpers.Styles.BackdropHelper.RemoveDarkMode(System.IntPtr)
+M:iNKORE.UI.WPF.Modern.Helpers.Styles.BackdropHelper.RemoveTitleBar(System.Windows.Window)
+M:iNKORE.UI.WPF.Modern.Helpers.Styles.BackdropHelper.RemoveTitleBar(System.IntPtr)
+F:iNKORE.UI.WPF.Modern.Native.DWMAPI.DWMWINDOWATTRIBUTE.DWMWA_SYSTEMBACKDROP_TYPE
+
