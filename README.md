@@ -1,13 +1,11 @@
 ![ModernFlyouts](ModernFlyouts/Assets/Images/Readme_Banner.png)
 
-#### An open source, modern, **Fluent Design-based** set of flyouts for Windows.
+#### An open source, modern, **Fluent Design-based** replacement for Windows flyouts
 
-[![Microsoft Store](https://img.shields.io/badge/Microsoft-Store-blue?style=flat&logo=microsoft)](https://www.microsoft.com/store/apps/9MT60QV066RP?ocid=badge)
-[![Github All Releases](https://img.shields.io/github/downloads/ModernFlyouts-Community/ModernFlyouts/total.svg?style=flat&logo=github)](https://github.com/ModernFlyouts-Community/ModernFlyouts/releases)
-[![GitHub release](https://img.shields.io/github/release/ModernFlyouts-Community/ModernFlyouts.svg?style=flat&logo=github)](https://github.com/ModernFlyouts-Community/ModernFlyouts/releases)
-[![Telegram](https://img.shields.io/badge/Telegram-channel-blue?style=flat&logo=telegram)](https://t.me/modernflyouts)
-[![Discord](https://discordapp.com/api/guilds/772367965307404298/widget.png)](https://discord.gg/TcYskeyaYE)
+#### (Modernized Fork of ModernFlyouts)
 
+[![Github All Releases](https://img.shields.io/github/downloads/Matro81/ModernFlyouts-Enhance/total.svg?style=flat&logo=github)](https://github.com/Matro81/ModernFlyouts-Enhance/releases)
+[![GitHub release](https://img.shields.io/github/release/Matro81/ModernFlyouts-Enhance.svg?style=flat&logo=github)](https://github.com/Matro81/ModernFlyouts-Enhance/releases)
 
 [Overview](#overview--) • [Features](#features--) • [System Requirements](#system-requirements--%EF%B8%8F) • [Installation](#installation--%EF%B8%8F) • [Connect with us](#connect-with-us--) • [Contributing](#contributing--) • [Screenshots](#screenshots--)
 
@@ -24,16 +22,16 @@ In case of Windows 11, this application will have the same UI but will provide a
 This project has its roots in the app [AudioFlyout](https://github.com/ADeltaX/AudioFlyout) by [ADeltaX](https://github.com/ADeltaX/).
 With additional implementations for **"Airplane mode"**, **"Brightness"** and **"LockKeys"** *(includes Insert key, Caps, Num & Scroll lock keys)* flyouts, this project stands as a complete replacement for the built-in flyouts.
 
-> Note : The built-in flyout will not be permanently affected. It will be hidden temporarily while this application is running. So, no reason to fear breaking your system.
-> For more information on how to recover the original flyouts, check out [this How To page](https://github.com/ModernFlyouts-Community/ModernFlyouts/wiki/How-Tos).
+> Note: The built-in flyout will not be permanently affected. It will be hidden temporarily while this application is running. So, no reason to fear breaking your system.
+> This is **ModernFlyouts Enhance**, a continued evolution focusing on Fluent Design 2 and immersive UX, following the original project's archival on Nov 15, 2025.
 
 > Users are provided the freedom to choose between the Windows built-in flyouts or modern flyouts from ModernFlyouts or neither of them.
 
 > It is impossible to have a flyout for the keyboard backlight brightness or the function (Fn) key because they are not passed as keys but as hardware signals (which the OEMs decide).  Any OS can receive those signals if they have the required driver.
 
-### Please check out [the Wiki](https://github.com/ModernFlyouts-Community/ModernFlyouts/wiki) for additional information, guides and how-tos.
+### Please check out [the Wiki](https://github.com/ModernFlyouts-Community/ModernFlyouts/wiki) for additional information, guides and how-tos
 
-### Please check out [this document](docs/GSMTC-Support-And-Popular-Apps.md) for support regarding your media player/browser.
+### Please check out [this document](docs/GSMTC-Support-And-Popular-Apps.md) for support regarding your media player/browser
 
 ------------------------
 
@@ -63,38 +61,25 @@ With additional implementations for **"Airplane mode"**, **"Brightness"** and **
 ------------------------
 
 ## System Requirements  🖥️
+
 - **Windows 11**
-- **Windows 10 1809 and above** 
+- **Windows 10 1809 and above**
+
 > older versions such as [v0.3](https://github.com/ModernFlyouts-Community/ModernFlyouts/releases/tag/v0.3.0) and below support Windows 10 1803 downlevel till Windows 8, however v0.4 and above won't.
 
 ------------------------
 
-## Installation  ⬇️
+ModernFlyouts Enhance is available for installation via GitHub.
 
-Modern Flyouts is available for you to install via  [Microsoft Store](https://www.microsoft.com/store/apps/9MT60QV066RP), [GitHub](https://github.com/ModernFlyouts-Community/ModernFlyouts/releases/latest), winget and [Chocolatey](https://chocolatey.org/packages/modernflyouts).
+Installing the app from GitHub releases is currentlty the only direct method for this enhanced version.
 
-All the distribution methods mentioned above are supported, however installing the app from the **Microsoft Store** is **recommended** as it is easier to install and will automatically remain up to date.
+**GitHub Installation**
 
-**Microsoft Store**
-
-<a href='https://www.microsoft.com/store/apps/9MT60QV066RP?ocid=badge'><img src='https://developer.microsoft.com/en-us/store/badges/images/English_get-it-from-MS.png' alt='Microsoft Store' width='160'/></a>
-
-**GitHub**
-
-1. Go to the [latest release on the Releases page](https://github.com/ModernFlyouts-Community/ModernFlyouts/releases/latest).
-2. Download the latest ***.msixbundle** file and the [latest available] **.cer** file from the assets.
-3. Install the certificate into the Trusted People directory.
-4. Install the downloaded ***.msixbundle** file and launch the app from the **Start Menu**.
-
-**winget**
-
-_please note that due to how winget processes package updates, updates may take **longer** to be released to winget_.
-
-`winget install --id=ModernFlyouts.ModernFlyouts -e`
-
-**Chocolatey**
-
-ModernFlyouts is **unofficially** available to install via Chocolatey [here](https://chocolatey.org/packages/modernflyouts), however as this is not maintained by us we can not verify its security or its update status.
+1. Go to the [latest release on the Releases page](https://github.com/Matro81/ModernFlyouts-Enhance/releases/latest).
+2. Download the latest `.msixbundle` or `.appinstaller` file.
+3. If using `.appinstaller`, simply run it to install and enable automatic updates.
+4. If downloading `.msixbundle` directly, you may need to install the provided certificate (`.cer`) into the **Trusted People** certificate store before installation.
+5. Launch the app from the **Start Menu**.
 
 ------------------------
 
@@ -123,7 +108,7 @@ I must admit that this project wouldn't be here *how it is* without **[ADeltaX](
 
 We must also say a big thanks to [our contributors](https://github.com/ModernFlyouts-Community/ModernFlyouts/graphs/contributors) for helping us with some important bug fixes, adding features and localization.
 
-### Our Team 
+### Our Team
 
 - **[ShankarBUS](https://github.com/ShankarBUS/)** - Ex-Maintainer/co-owner & Developer.
 - **[ADeltaX](https://github.com/ADeltaX/)** - Developer of innovative solutions to circumvent microsoft rubbish
