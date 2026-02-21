@@ -12,9 +12,14 @@ namespace ModernFlyouts
         public const string AppName = "ModernFlyouts Enhance";
         public const string AppHostName = "ModernFlyouts Enhance";
 
+        public static System.Windows.SplashScreen SplashScreen { get; set; }
+
         [STAThread]
         private static void Main(string[] args)
         {
+            SplashScreen = new System.Windows.SplashScreen("SplashScreen.png");
+            SplashScreen.Show(false);
+
             Thread thread = new(() => {
                 AppLifecycleManager.StartApplication(args, () =>
                 {

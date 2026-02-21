@@ -15,6 +15,8 @@ namespace ModernFlyouts
         {
             FlyoutHandler.Instance = new FlyoutHandler();
             FlyoutHandler.Instance.Initialize();
+
+            Program.SplashScreen?.Close(System.TimeSpan.FromMilliseconds(500));
         }
     }
 }
