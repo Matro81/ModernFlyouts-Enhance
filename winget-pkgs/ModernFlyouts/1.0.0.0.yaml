@@ -5,6 +5,7 @@ PackageIdentifier: Matro81.ModernFlyoutsEnhance
 PackageVersion: 1.0.0.0
 PackageName: ModernFlyouts Enhance
 Publisher: Matro81
+PackageLocale: en-US
 License: MIT
 LicenseUrl: https://github.com/Matro81/ModernFlyouts-Enhance/blob/main/LICENSE
 ShortDescription: A modern Fluent Design replacement for the old Windows flyouts with Fluent Design 2 support.
@@ -24,6 +25,6 @@ Installers:
   - Architecture: x64
     InstallerType: msix
     InstallerUrl: https://github.com/Matro81/ModernFlyouts-Enhance/releases/download/v1.0.0/ModernFlyouts_Enhance_1.0.0_x64.msix
-    InstallerSha256: 6A9F1EF9FBBF0E7D93FD7558EA114F0144112722587734FA6B81BEE82BE5199E4
+    InstallerSha256: 6A9F1EF9FBBF0E7D93FD7558EA114F014412722587734FA6B81BEE82BE5199E4
 ManifestType: singleton
 ManifestVersion: 1.6.0
