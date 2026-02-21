@@ -97,6 +97,7 @@
 
   <ItemGroup>
     <Page Remove="Properties\DesignTimeResources.xaml" />
+    <SplashScreen Include="SplashScreen.png" />
   </ItemGroup>
 
   <ItemGroup>
