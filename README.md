@@ -13,7 +13,7 @@
 
 **Default Flyout** | **ModernFlyouts**
 
-![Overview](docs/images/Overview.png)
+![Overview](docs/040-Design/Assets/Overview.png)
 
 This application aims to provide a **Fluent Design System** based replacement for the old, built-in, **Metro Design** based **Audio/Airplane mode/Brightness** flyouts in **Windows** ~~*(which haven't been updated since Windows 8)*~~  which are shown while pressing the media or volume keys or even the brightness keys *(may be absent on Desktop PCs)* or when airplane/flight mode is toggled.
 
