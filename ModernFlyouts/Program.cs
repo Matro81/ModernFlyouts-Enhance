@@ -17,10 +17,12 @@ namespace ModernFlyouts
         [STAThread]
         private static void Main(string[] args)
         {
-            SplashScreen = new System.Windows.SplashScreen("SplashScreen.png");
-            SplashScreen.Show(false);
-
             Thread thread = new(() => {
+                // SplashScreen MUST be shown on the STA thread that runs the WPF Dispatcher.
+                // Showing it on the main thread fails because Main() exits immediately after thread.Start().
+                SplashScreen = new System.Windows.SplashScreen("SplashScreen.png");
+                SplashScreen.Show(false);
+
                 AppLifecycleManager.StartApplication(args, () =>
                 {
 #if RELEASE
