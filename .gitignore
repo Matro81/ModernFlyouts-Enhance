@@ -167,6 +167,11 @@ DocProject/Help/html
 # Click-Once directory
 publish/
 publish_output/
+msix_layout/
+msix_cert_thumbprint.txt
+msix_sha256.txt
+*.msix
+*.cer
 
 # Publish Web Output
 *.[Pp]ublish.xml
