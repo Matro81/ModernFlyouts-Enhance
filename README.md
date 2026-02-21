@@ -71,9 +71,18 @@ With additional implementations for **"Airplane mode"**, **"Brightness"** and **
 
 ModernFlyouts Enhance is available for installation via GitHub.
 
-Installing the app from GitHub releases is currentlty the only direct method for this enhanced version.
+Installing the app from GitHub releases is currently the only official method for this enhanced version.
 
-**GitHub Installation**
+**Methods of Installation:**
+
+### 1. Portable Version (Recommended for quick start)
+
+1. Go to the [latest release on the Releases page](https://github.com/Matro81/ModernFlyouts-Enhance/releases/latest).
+2. Download the `ModernFlyouts_Enhance_Portable_x64.zip` file.
+3. Extract the folder to a permanent location (e.g., `C:\Program Files\ModernFlyoutsEnhance`).
+4. Run `ModernFlyouts.exe`.
+
+### 2. GitHub Installer (MSIX)
 
 1. Go to the [latest release on the Releases page](https://github.com/Matro81/ModernFlyouts-Enhance/releases/latest).
 2. Download the latest `.msixbundle` or `.appinstaller` file.
